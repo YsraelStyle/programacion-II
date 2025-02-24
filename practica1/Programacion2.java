@@ -13,19 +13,19 @@ class Punto {
         this.y = y;
     }
 
-    // Método para obtener las coordenadas cartesianas
+    
     public double[] coordCartesianas() {
         return new double[]{x, y};
     }
 
-    // Método para obtener las coordenadas polares
+    
     public double[] coordPolares() {
         double radio = Math.sqrt(x * x + y * y);
         double angulo = Math.atan2(y, x);
         return new double[]{radio, angulo};
     }
 
-    @Override
+    
     public String toString() {
         return "(" + x + ", " + y + ")";
     }
